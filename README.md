@@ -1,4 +1,4 @@
-<h3<To start the application </h3>
+<h3>To start the application </h3>
 
 * Inside the server directory: 
 
