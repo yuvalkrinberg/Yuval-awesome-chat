@@ -75,6 +75,7 @@ body.modal-open .main-page{
    padding: 6px;
 }
 
+
 .img-fluid{
   display: inline-block;
   vertical-align: middle;
@@ -257,6 +258,7 @@ label{
   border-radius: 15px 0px 15px 15px;
   width: fit-content;
   float: right;
+  padding: 7px 10px;
 }
 
 .not-own{
@@ -264,6 +266,7 @@ label{
   border-radius: 0px 15px 15px 15px;
   width: fit-content;
   float: left;
+  padding: 7px 10px;
 }
 
 .ui-animated-button {
@@ -302,7 +305,7 @@ label{
 }
 
 .start-button:hover, .start-button:focus, .start-button:active {
-  background-color: #a0b9c5;
+  background-color: #214a5f;
   box-shadow: none;
   border-color: transparent;
 }

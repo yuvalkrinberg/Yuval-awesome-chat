@@ -8,7 +8,11 @@ const MessageList = ({ msgHistory, user, currentMsg, handleFormChange, handleSen
   <>
     <Container className="message-list-container">
       {msgHistory.map((message, i) => ((i > 0 && msgHistory[i - 1].user.username === message.user.username)
-        ? <Message isOwn={user.username === message.user.username}><MessageText className={user.username === message.user.username ? 'own' : 'not-own'}>{message.message}</MessageText></Message>
+        ? (
+          <Message isOwn={user.username === message.user.username}>
+            <MessageText className={user.username === message.user.username ? 'own' : 'not-own'}>{message.message}</MessageText>
+          </Message>
+        )
         : <MyMessage key={message.message} msg={message} currentUser={user.username} />))}
     </Container>
     <Container className="message-text-container">
