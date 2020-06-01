@@ -1,7 +1,7 @@
-Run npm install inside the root directory
+* Run "npm install" inside the root directory <code>npm install</code>
 
-Run npm install inside the server directory
+* Run "npm install" inside the server directory
 
-To run the server, from the server directory: "nodemon app.js"
+* To run the server, from the server directory: "nodemon app.js"
 
-From the root directory run: "npm start"
+* From the root directory run: "npm start"
