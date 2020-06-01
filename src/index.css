@@ -1,13 +1,309 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+@import url('https://fonts.googleapis.com/css?family=Amaranth');
+
+body{
+  font-family: Amaranth;
+  background-image: url("https://res.cloudinary.com/dgmvbx86i/image/upload/v1590945007/rrr_h9nxho.png");
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  width: 100%;
+  height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body.modal-open .main-page{
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
 }
+
+.modal-body{
+  padding-top: 0px;
+}
+
+.modal-dialog{
+  max-width: 700px;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.modal-content {
+  color: #618a9e;
+  border-radius: 20px;
+  background-image: url("https://res.cloudinary.com/dgmvbx86i/image/upload/v1590945007/%D7%9C%D7%9C%D7%90_%D7%A9%D7%9D_wkoobg.png");
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  font-size: 18px;
+}
+
+.modal-header{
+  border-bottom: none;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.modal-title{
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+}
+
+.modal-footer{
+  border-top: none;
+}
+
+.modal-button{
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+}
+
+.avatar-button {
+  background-color: transparent;
+  border-radius: 40px;
+  border-color: transparent;
+  padding: 0px;
+  margin: auto;
+}
+
+.avatar-button:focus{
+   background-color: transparent;
+   border-radius: 40px;
+   border-color: green;
+   padding: 6px;
+}
+
+.img-fluid{
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+}
+
+@keyframes avatar-anm {
+  from {transform: scale(1)}
+  to {transform: scale(1.2)}
+}
+
+.img-fluid:hover,
+.img-fluid:focus,
+.img-fluid:active {
+  animation-name: avatar-anm;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.part-image{
+  height: 40px;
+  margin: 10px 30px;
+}
+
+.main-title{
+  width: 30px;
+  margin-top: -10px;
+  margin-left: 10px;
+  background: white;
+}
+
+.main-container{
+  margin: 40px auto;
+  overflow: hidden;
+  border: double 6px lightgray;
+  border-radius: 25px;
+  width: 100%;
+  height: 450px;
+  background-color: lightgray;
+  padding: 0px;
+}
+
+.inner-container{
+  padding: 0px;
+  margin: 0px;
+  height: inherit;
+  width: 70%;
+  background-color: white;
+  position: relative;
+  float: right;
+}
+
+.message-list-container{
+  overflow: auto;
+  width: 100%;
+  height: 85%;
+  margin-bottom: 20px;
+  position: relative;
+  float: top;
+}
+
+.message-text-container{
+  margin-top: 10px;
+  width: 90%;
+  height: 10%;
+  float: bottom;
+  position: relative;
+}
+
+.mb-3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px 15px 0px 0px;
+  border: #d1fef1;
+}
+
+.connections-list-container{
+  overflow: auto;
+  margin: 0px;
+  padding: 0px;
+  height: inherit;
+  width: 30%;
+  background-color: lightgray;
+  float: left;
+}
+
+h2.connections{
+  font: bold 25px/30px Sofia, sans-serif;
+  color: black;
+  margin: 15px 90px;
+}
+
+ul.participants {
+  list-style-type: none;
+  margin: 0px 0px;
+  width: 100%;
+  padding: 0px;
+}
+
+ul.participants li {
+  font-size: 16px;
+  background-color: #e0ebeb;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+input[type="radio"] {
+  position:fixed;opacity:0
+}
+input[type="radio"]:after {
+  position:fixed;opacity:0
+}
+input[type="radio"]:checked:after {
+  position:fixed;opacity:0
+}
+
+label{
+  margin: 20px auto;
+}
+
+.user-form{
+  height: 40px;
+  width: 250px;
+  margin: auto;
+  border-color: lightgray;
+  border-width: 3px;
+  border-radius: 10px;
+  font: 16px Amaranth;
+}
+.user-form:hover, .user-form:focus, .user-form:active {
+  border-left-color: #618a9e;
+  border-top-color: lightgray;
+  border-right-color: lightgray;
+  border-bottom-color: lightgray;
+  box-shadow: none;
+}
+
+.message-input {
+  bottom: 0;
+  margin: 0px;
+  padding: 0px;
+  text-indent: 30px;
+  border-color: #e0ebeb;
+  height: inherit;
+  border-width: 2px;
+  font: 16px Amaranth;
+}
+
+.message-input:focus, .message-input:hover, .message-input:active{
+  border-bottom-color: #618a9e;
+  border-bottom-width: 3px;
+  border-top-color: lightgray;
+  border-right-color: lightgray;
+  border-left-color: lightgray;
+  box-shadow: none;
+}
+
+.no-name{
+  color: darkred;
+  margin: auto;
+}
+
+.user-message{
+  width: fit-content;
+  float: right;
+  height: fit-content;
+}
+
+.own{
+  background-color: #e0ebeb;
+  border-radius: 15px 0px 15px 15px;
+  width: fit-content;
+  float: right;
+}
+
+.not-own{
+  background-color: #e0ebeb;
+  border-radius: 0px 15px 15px 15px;
+  width: fit-content;
+  float: left;
+}
+
+.ui-animated-button {
+  margin: 0px;
+}
+
+.user-left {
+  background-color: #e0ebeb;
+  border-radius: 15px 15px 15px 15px;
+  width: fit-content;
+  padding: 7px 10px;
+  margin: 3px auto;
+  font: 11px Amaranth, sans-serif;
+}
+
+@keyframes anm {
+  from {color: white}
+  to {color: #e3c9c9}
+}
+
+.msg-icon{
+  color: white;
+  animation-name: anm;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.start-button{
+  border-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  background-color: #618a9e;
+  font: 16px Amaranth;
+}
+
+.start-button:hover, .start-button:focus, .start-button:active {
+  background-color: #a0b9c5;
+  box-shadow: none;
+  border-color: transparent;
+}
+
