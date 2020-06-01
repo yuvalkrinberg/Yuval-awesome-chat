@@ -1,3 +1,5 @@
+<h3<To start the application </h3>
+
 * Inside the server directory: 
 
 <code>npm install</code>
