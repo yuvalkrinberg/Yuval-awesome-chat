@@ -4,7 +4,6 @@ import { Container } from 'react-bootstrap';
 import MyModal from './MyModal';
 import MessageList from './MessageList';
 import ConnectionsList from './ConnectionsList';
-import avatars from '../utilities/avatars';
 
 const socket = io('localhost:8080');
 

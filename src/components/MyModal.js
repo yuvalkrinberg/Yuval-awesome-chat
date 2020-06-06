@@ -13,7 +13,7 @@ import {
 } from 'react-bootstrap';
 import React, { useState } from 'react';
 import { Icon } from 'semantic-ui-react';
-import avatars from "../utilities/avatars";
+import avatars from '../utilities/avatars';
 
 const MyModal = ({ showModal, handleCloseModal, clientsNames }) => {
   const [showAlert, setShowAlert] = useState(false);
@@ -71,7 +71,7 @@ const MyModal = ({ showModal, handleCloseModal, clientsNames }) => {
           <Row>
             <ButtonGroup toggle onChange={(e) => handleAvatar(e)}>
               {avatars.slice(1).map((avatar, i) => (
-                <Col xs={2} md={2}>
+                <Col xs={2} md={2} key={avatars[i + 1]}>
                   <ToggleButton className="avatar-button" type="radio" defaultChecked value={i + 1}>
                     <Image src={avatars[i + 1]} rounded fluid />
                   </ToggleButton>
