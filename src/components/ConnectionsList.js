@@ -7,7 +7,7 @@ const ConnectionsList = ({ connList, currentUser }) => {
       <>
         <h2 className="connections">Participants</h2>
         <ul className="participants">
-          {connList.map((client) => <li key={client.user}><ClientItem client={client} currentUser={currentUser} /></li>)}
+          {connList.map((client) => <li key={client.username}><ClientItem client={client} currentUser={currentUser} /></li>)}
         </ul>
       </>
     );
