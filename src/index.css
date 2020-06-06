@@ -3,11 +3,11 @@
 
 body{
   font-family: Amaranth;
-  background-image: url("https://res.cloudinary.com/dgmvbx86i/image/upload/v1590945007/rrr_h9nxho.png");
+  background-image: url("https://res.cloudinary.com/dgmvbx86i/image/upload/v1591463269/%D7%9C%D7%9C%D7%90_%D7%A9%D7%9D_dj069q.png");
   background-size:     cover;
   background-repeat:   no-repeat;
   width: 100%;
-  height: 100%;
+  height: 90%;
 }
 
 body.modal-open .main-page{
@@ -240,6 +240,10 @@ label{
   border-right-color: lightgray;
   border-left-color: lightgray;
   box-shadow: none;
+}
+
+hr {
+  width: 400px;
 }
 
 .no-name{
